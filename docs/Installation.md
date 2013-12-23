@@ -11,9 +11,12 @@ Using Composer to install
 1. pull the repository
 2. cd into checkout folder
 3. php composer.phar install
+
+(ignore errors about Vendor not being present or something like that)
+
 4. create /config/autoload/local.php from local.php.dist and change the settings to needed values (db, mail, language)
-5. ./bin/setup to create tables and load role data
-6. create Apache/Nginx host for project with SSL(!)
+5. php ./bin/setup to create tables and load role data
+6. create Apache/Nginx vhost for project with SSL(!)
 7. chmod 777 /data/log/app.log
 8. chmod -R 777 /data/Secretary/Entity/Proxy if your are using Array Proxy setting
 
